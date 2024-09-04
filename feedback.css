@@ -1,0 +1,64 @@
+/* CSS for the Event Feedback Form */
+body {
+    font-family: Arial, sans-serif; /* Set a base font */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+}
+
+.container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width to maintain readability */
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold; /* Bold font for labels */
+    display: block; /* Ensure labels take full width */
+}
+
+input {
+    width: 100%; /* Make text inputs full width */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside inputs */
+}
+
+input[type="radio"] {
+    width: auto; /* Ensure radio buttons are not stretched */
+    margin: 0 5px; /* Spacing around radio buttons */
+}
+
+/* Flexbox for arranging items horizontally */
+.flex-horizontal {
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between items */
+}
+
+/* Styling for the textareas */
+textarea {
+    width: 100%; /* Make textareas take the full width */
+    border: 1px solid #ccc; /* Border around textareas */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside textareas */
+}
+
+/* Styling for the submit button */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+        /* Container for each event */
+.event-container {
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden; /* Clear floats */
+}
+
+        /* Event image */
+.event-image {
+    text-align: center; /* Center the image */
+    margin-bottom: 10px;
+}
+
+.event-image img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+        /* Event details */
+.event-details {
+    text-align: center; /* Center the details */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.event-details form {
+    display: inline-block;
+}
+
+.event-details button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.event-details button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.event-details button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.event-details button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.event-details button.delete:hover {
+    background-color: #c82333;
+}

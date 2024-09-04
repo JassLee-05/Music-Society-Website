@@ -1,0 +1,294 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid #333;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Main Content */
+.container {
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.president {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.president-image {
+    flex: 1 1 30%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.president-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.president-info {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.president-info h1 {
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.president-info p {
+    text-align: justify;
+}
+
+/* Music Area */
+.music_area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.music_field {
+    display: flex;
+    align-items: center;
+}
+
+.music_field .thumb img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.audio_name {
+    flex: 1;
+}
+
+.audio_name .name h4 {
+    margin-bottom: 5px;
+}
+
+.audio_name .name p {
+    margin-bottom: 10px;
+    color: #888;
+}
+
+/* Video Section */
+.video_section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video_section video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contactUs {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.contactUs h3 {
+    margin-bottom: 20px;
+}
+
+.contactUs a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contactUs img {
+    max-width: 60px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.contactUs img:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    right: 0;
+    min-width: 400px;
+    z-index: 1000;
+    padding: 10px;
+    border: 1px solid #333; /* Add border color to dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the dropdown */
+}
+
+.dropdown-content h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown-content h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown-content p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.dropdown-content p a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.dropdown-content p a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+        /* Dropdown hover effect */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+        /* Breaker styles */
+.breaker {
+    margin: 10px 0;
+    color: grey;
+    text-align: center;
+}
+
+.breaker div {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    flex: 1; /* Take up remaining space */
+    margin: 0 10px; /* Adjust spacing */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid black; /* Add custom bottom border */
+}
